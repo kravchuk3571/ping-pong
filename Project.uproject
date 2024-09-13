@@ -1,0 +1,30 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.4",
+  "Category": "",
+  "Description": "",
+  "Modules": [
+    {
+      "Name": "Project",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "AdditionalDependencies": [
+        "Engine",
+        "UMG"
+      ]
+    }
+  ],
+  "TargetPlatforms": [
+    "WindowsNoEditor",
+    "WindowsServer"
+  ],
+  "Plugins": [
+    {
+      "Name": "ModelingToolsEditorMode",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    }
+  ]
+}

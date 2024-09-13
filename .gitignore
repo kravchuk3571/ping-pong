@@ -1,3 +1,14 @@
+*.sln
+.vs
+.vsconfig
+Backup
+Binaries
+Build
+DerivedDataCache
+Intermediate
+Saved
+UpgradeLog.htm
+
 # Prerequisites
 *.d
 
