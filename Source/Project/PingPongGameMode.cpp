@@ -34,7 +34,7 @@ void APingPongGameMode::PostLogin(APlayerController* NewPlayer)
 
     if (NumPlayers != RequiredPlayers)
     {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Waiting for players... %d/%d connected"), NumPlayers, RequiredPlayers));
+        UE_LOG(LogTemp, Log, TEXT("Waiting for players... %d/%d connected"), NumPlayers, RequiredPlayers);
         return;
     }
 
@@ -48,7 +48,7 @@ void APingPongGameMode::StartMatch()
 
     bGameStarted = true;
 
-    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Match Started!"));
+    UE_LOG(LogTemp, Log, TEXT("Match Started!"));
 
     for (auto It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
     {
